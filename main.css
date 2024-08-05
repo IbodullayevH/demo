@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(1, 70, 6);
+  }
+  
+  .box {
+    width: 1320px;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .title {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    user-select: none;
+  }
+  
+  #input_table {
+    width: 300px;
+    height: 100px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  #output_table {
+    width: 300px;
+    height: 100px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+  
+  
+  }
+  
+  #data_1 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    background-color: rgba(240, 244, 247, 0.904);
+    color: darkblue;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  #data_2 {
+    width: auto;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    background-color: rgba(240, 244, 247, 0.904);
+    color: darkblue;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  #data_3 {
+    width: auto;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    background-color: rgba(240, 244, 247, 0.904);
+    color: darkblue;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  .stc{
+    font-size: 4rem;
+    float: left;
+  
+  }
