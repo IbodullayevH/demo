@@ -85,6 +85,16 @@
     font-size: 20px;
     font-family: sans-serif;
   }
+  #data_4 {
+    width: auto;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    background-color: rgba(240, 244, 247, 0.904);
+    color: darkblue;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
   
   .stc{
     font-size: 4rem;
