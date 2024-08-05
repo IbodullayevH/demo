@@ -1,33 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
-  
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(red, yellow);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(red, yellow);
+  margin: 0;
+  padding: 0;
+}
+
   .box {
-    width: 1320px;
-    height: 92vh;
+    width: 90%;
+    max-width: 1320px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items:center;
-    justify-content:space-between;
-    gap: 1px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 20px;
   }
   
-  .part{
-    width: 30%;
-    height: 100%;
+
+  .part {
+    width: 100%;
+    max-width: 30%;
     padding-top: 60px;
-    
   }
   .title {
     color: white;
@@ -110,17 +112,61 @@
     font-family: sans-serif;
   }
   
-.forImg{
-width: 35%;
-height: 100%;
-border: 1px solid white;
-overflow: hidden;
-overflow-x: scroll;
-border-radius: 10px;
-  img {
-    width: 900px;
-    height: 590px; 
-    display: block;
-    object-fit: cover;
+
+.forImg {
+  width: 100%;
+  max-width: 37%;
+  height: 100%;
+  border: 1px solid white;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.forImg img {
+  width: 900px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .box {
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+
+  .part {
+      max-width: 100%;
+      padding-top: 20px;
+
+  }
+
+  .title, .title1 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  #input_table, #output_table {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .forImg {
+      max-width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .title, .title1 {
+      font-size: 1.25rem;
+      align-items: center;
+  }
+
+  .title1 {
+      padding-left: 1rem;
+  }
+}
+
