@@ -8,21 +8,27 @@
   
   body {
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(1, 70, 6);
+    background-image: linear-gradient(red, yellow);
   }
   
   .box {
     width: 1320px;
-    height: 90vh;
+    height: 92vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 50px;
+    align-items:center;
+    justify-content:space-between;
+    gap: 1px;
   }
   
+  .part{
+    width: 30%;
+    height: 100%;
+    padding-top: 60px;
+    
+  }
   .title {
     color: white;
     font-size: 28px;
@@ -31,21 +37,29 @@
     line-height: 50px;
     user-select: none;
   }
+  .title1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 100px;
+    line-height: 50px;
+    user-select: none;
+  }
   
   #input_table {
-    width: 300px;
+    width: 350px;
     height: 100px;
     background-color: gray;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 15px;
     overflow: hidden;
   }
   
   #output_table {
-    width: 300px;
+    width: 350px;
     height: 100px;
     background-color: gray;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 15px;
     overflow: hidden;
     overflow: scroll;
@@ -76,7 +90,7 @@
     font-family: sans-serif;
   }
   #data_3 {
-    width: auto;
+    width: 100%;
     height: 100%;
     border: none;
     padding: 10px;
@@ -96,3 +110,17 @@
     font-family: sans-serif;
   }
   
+.forImg{
+width: 35%;
+height: 100%;
+border: 1px solid white;
+overflow: hidden;
+overflow-y: scroll;
+overflow-x: scroll;
+  img {
+    width: 900px;
+    height: 590px; 
+    display: block;
+    object-fit: cover;
+  }
+}
